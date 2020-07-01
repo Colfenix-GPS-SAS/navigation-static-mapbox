@@ -5,3 +5,10 @@ style: 'mapbox://styles/mapbox/streets-v11',
 center: [-74.1483976,4.5891058],
 zoom: 15
 });
+
+map.addControl(
+    new MapboxDirections({
+    accessToken: mapboxgl.accessToken
+    }),
+    'top-left'
+    );
